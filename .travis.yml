@@ -8,7 +8,7 @@ pandoc_version: 1.19.2.1
 script:
   - Rscript -e 'rmarkdown::render("main.Rmd", output_format = "bookdown::html_document2")'
   - mkdir docs
-  - cp main.html index.html
+  - cp main.html docs/index.html
 
 
 # deploy docs/ and master branch to branch 'gh-pages'
