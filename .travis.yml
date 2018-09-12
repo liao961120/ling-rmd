@@ -1,0 +1,22 @@
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+
+language: R
+sudo: false
+cache: packages
+pandoc_version: 1.19.2.1
+
+script:
+  - Rscript -e 'rmarkdown::render("main.Rmd", output_format = "bookdown::html_document2")'
+  - mkdir docs
+  - cp main.html index.html
+
+# deploy docs/ and master branch to branch 'gh-pages'
+deploy:
+  - provider: pages    # Deploy master/docs to branch gh-pages
+    skip-cleanup: true
+    github-token: $GH_TOKEN  
+    keep-history: false
+    local-dir: docs    # Web output directory
+    on:
+      branch: master
+      condition: $TRAVIS_OS_NAME = linux

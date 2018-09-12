@@ -1,0 +1,35 @@
+---
+title: "Untitled"
+author: "Yongfu Liao"
+date: "September 12, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(reticulate)
+use_python("/usr/bin/python3")
+```
+
+## R Markdown
+
+```{python}
+x = 1
+for i in range(1, 10):
+    x += 1
+```
+
+
+```{python}
+print(x)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
