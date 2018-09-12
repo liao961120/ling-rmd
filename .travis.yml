@@ -10,6 +10,7 @@ script:
   - mkdir docs
   - cp main.html index.html
 
+
 # deploy docs/ and master branch to branch 'gh-pages'
 deploy:
   - provider: pages    # Deploy master/docs to branch gh-pages
