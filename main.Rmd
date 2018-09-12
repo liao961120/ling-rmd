@@ -25,12 +25,28 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+library(knitr)
+library(dplyr)
+
+cond_cmpl <- function(html = NULL, latex = NULL) {
+  if (knitr::is_html_output()) return(html)
+  else return(latex)
+}
 ```
 
-`r if (!knitr::is_html_output()) '$\\\\$'`
-`r if (!knitr::is_html_output()) '$\\\\$'`
-`r if (!knitr::is_html_output()) '$\\\\$'`
+
+
+
+`r cond_cmpl(latex = '$\\\\$')`
+`r cond_cmpl(latex = '$\\\\$')`
+`r cond_cmpl(latex = '$\\\\$')`
+
+
 
 ## Abstract
 

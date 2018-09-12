@@ -1,1 +1,11 @@
 ## Introduction
+
+```{r}
+if (is_html_output()) include_graphics("figs/citr.gif")
+```
+
+```{r fig.show='hold', out.width=c("43.5%", "56.5%"), fig.cap="Inserting citations in R Markdown using citr (https://github.com/crsh/citr)."}
+if (is_latex_output()) include_graphics(c("figs/citr2.png", "figs/citr0.png"))
+```
+
+
