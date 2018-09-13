@@ -1,1 +1,14 @@
 ## R Markdown as an Authoring Tool
+
+### The General Framework
+
+"Markdown" is a minimalist and easy-to-learn markup language[^markup], which formats the text by using plain text markers, e.g., lines beginning with "#" are first level titles, "##" for second level titles, wrapping text with "\*" results in italics, etc. "R Markdown" extends the syntax of Markdown to allow more versatile formatting of the text and, more importantly, allows running R code and embedding the results into the document. To put it another way, this means that the analysis of data (through R) is directly integrated into document writing, and hence, errors incured by manual copy-and-paste are eliminated.
+
+
+
+
+
+
+
+
+[^markup]: 

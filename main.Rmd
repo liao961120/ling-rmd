@@ -2,11 +2,17 @@
 title: "R Markdown as an Authoring Tool in Linguistics"
 author: '`r ifelse(knitr::is_html_output(), "Yongfu Liao", "廖永賦\\thanks{國立臺灣大學心理學系}")`'
 date: "`r format(Sys.Date(), '%B %d, %Y')`"
-bibliography: 
+bibliography: references.bib
 csl: style_sheets/apa.csl
 link-citations: yes
 always_allow_html: yes
 output:
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    number_sections: FALSE
+    toc: False
+    includes:
+      in_header: style_sheets/header.tex
   bookdown::html_document2:
     includes:
     number_sections: no
@@ -16,19 +22,15 @@ output:
     toc_depth: 2
     toc_float:
         collapsed: false
-  bookdown::pdf_document2:
-    latex_engine: xelatex
-    number_sections: FALSE
-    toc: False
-    includes:
-      in_header: style_sheets/header.tex
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
 	echo = FALSE,
 	message = FALSE,
-	warning = FALSE
+	warning = FALSE,
+	fig.pos = 'H',
+	fig.align = 'center'
 )
 library(knitr)
 library(dplyr)
@@ -42,11 +44,6 @@ cond_cmpl <- function(html = NULL, latex = NULL) {
 
 
 
-`r cond_cmpl(latex = '$\\\\$')`
-`r cond_cmpl(latex = '$\\\\$')`
-`r cond_cmpl(latex = '$\\\\$')`
-
-
 
 ## Abstract
 
@@ -54,6 +51,7 @@ cond_cmpl <- function(html = NULL, latex = NULL) {
 
 
 \pagenumbering{gobble}
+
 \newpage 
 \pagenumbering{arabic}
 
@@ -62,13 +60,21 @@ cond_cmpl <- function(html = NULL, latex = NULL) {
 ```
 
 
+\newpage 
+
 ```{r child = '2-method.Rmd'}
 ```
 
+\newpage 
 
 ```{r child = '3-result.Rmd'}
 ```
 
+\newpage 
 
 ```{r child = '4-discussion.Rmd'}
 ```
+
+\newpage
+
+## References
