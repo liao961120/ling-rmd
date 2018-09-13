@@ -10,4 +10,5 @@ LazyData: true
 Imports: bookdown,
     dplyr,
     knitr,
-    rmarkdown
+    rmarkdown,
+    reticulate
