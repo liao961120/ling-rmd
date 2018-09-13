@@ -1,6 +1,6 @@
 ## R Markdown as an Authoring Tool
 
-"Markdown" is a minimalist and easy-to-learn markup language[^markup], which formats the text by using plain text markers, e.g., lines beginning with "#" are first level titles and "##" for second level titles, wrapping text with "\*" results in italics, etc. "R Markdown" extends the syntax of Markdown to allow more versatile styling of the text and therefore allows authoring documents with publication-ready qualities.
+"Markdown" is a minimalist and easy-to-learn markup language[^markup], which formats the text by using plain text markers, e.g., lines beginning with "#" are first level titles and "##" are second level titles, wrapping text with "\*" results in italics, etc. "R Markdown" extends the syntax of Markdown to allow more versatile styling of the text and therefore allows authoring documents with publication-ready qualities.
 
 
 ### Benefits of Using R Markdown
@@ -21,7 +21,7 @@ To put it another way, the analysis of data (through R) is directly integrated i
 A Reproducibile analysis is an analysis with results that can be generated directly from its underlying raw data anywhere by anybody [cite needed]. Besides the above mentioned properties of R and R Markdown, two other features make R Markdown a good tool for facilitating a reproducible workflow:
 
 1. **R Markdown is plain text**  
-  Plain text format, contrary to binaries such as MS Word, doesn't require specialied (and often propriety) software to open, and hence facilitates the openness of science. Plain text also makes the file easiler to "version control", i.e, keeping the history of modifications, or versions, of the file by version control softwares.
+  Plain text format, contrary to binaries such as MS Word, doesn't require specialied (and often propriety) software to open, hence facilitates the openness of science. Plain text also makes the file easiler to "version control", i.e, keeping the history of modifications, or versions, of the file by version control softwares.
 
 1. **Python Support**  
   The new R package reticulate [@allaire2018] enhances the ability of Python integration in R. It is now possible to run Python in R console, and the new Python engine enabled by reticulate also solved a major drawback in previous versions of R Markdown -- Python variables are now shared across different code chunks in R Markdown documents. This makes gives R Markdown the same power as the Juyper notebook.  
