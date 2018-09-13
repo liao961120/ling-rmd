@@ -8,7 +8,7 @@ It should be argued that a workflow be proposed in a specific field of science, 
 
 An integrated workflow for academic writing is crucial in science. An example of a common, but not integrated, workflow is illustrated below:
 
-(ref:caption-badflow) A common workflow [from @munzert2014automated, pp xviii]
+(ref:caption-badflow) A common workflow [from @munzert2014, pp xviii]
 
 ```{r out.width="40%" ,fig.cap="(ref:caption-badflow)"}
 include_graphics("figs/auto-data-collect-r-1.png")
@@ -17,7 +17,7 @@ include_graphics("figs/auto-data-collect-r-1.png")
 One of the problem of this workflow is that authors have to manually copy-and-paste results from different sources, which is error-prone, and when errors are found, authors have to go through the process again, wasting a substantial time.
 An even more serious problem is that this workflow hinders the progress of science, since when errors occured but are not found, erroneous results enter a published paper, in which subsequent researches would base on.
 
-Facilitating an integrated workflow for acedemic writing is related to specific tasks a field often does. Hence, no preexisting tools exist. However, general frameworks exist and are extendable and customizable to fit in specific needs in a field. This article surveys the R Markdown ecosystem, and proposes R Markdown as an authoring tool in Linguistics.
+Facilitating an integrated workflow for acedemic writing is related to specific tasks a field often does. Hence, no preexisting tools exist. However, general frameworks exist and are extendable and customizable to fit in specific needs in a field. This article surveys the R Markdown ecosystem, and focuses perticularly on features related to Linguistics.
 
 
 ```{r}

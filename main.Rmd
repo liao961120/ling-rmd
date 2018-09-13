@@ -2,7 +2,7 @@
 title: "R Markdown as an Authoring Tool in Linguistics"
 author: '`r ifelse(knitr::is_html_output(), "Yongfu Liao", "廖永賦\\thanks{國立臺灣大學心理學系}")`'
 date: "`r format(Sys.Date(), '%B %d, %Y')`"
-bibliography: references.bib
+bibliography: author-ling.bib
 csl: style_sheets/apa.csl
 link-citations: yes
 always_allow_html: yes
