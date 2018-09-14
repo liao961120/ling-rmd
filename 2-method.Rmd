@@ -22,15 +22,12 @@ To put it another way, the analysis of data (through R) is directly integrated i
 
 A Reproducibile analysis is an analysis with results that can be generated directly from raw data anywhere by anybody [@berez-kroeker2018]. Besides rerunning analysis to generate results every time, two other features make R Markdown a good tool for facilitating a reproducible workflow:
 
-##### **1. R Markdown is plain text**
+1. **R Markdown is plain text**  
+  Plain text format, contrary to binaries such as MS Word, doesn't require specialied (and often propriety) software to open, hence facilitates the openness of science. Plain text also makes the file easiler to "version control", i.e, keeping the history of modifications, or versions, of the file by version control softwares.
 
-Plain text format, contrary to binaries such as MS Word, doesn't require specialied (and often propriety) software to open, hence facilitates the openness of science. Plain text also makes the file easiler to "version control", i.e, keeping the history of modifications, or versions, of the file by version control softwares.
-
-##### **2. Python support**
-
-The new R package reticulate [@allaire2018] enhances the ability of Python integration in R. It is now possible to run Python in R console, and the new Python engine enabled by reticulate also solved a major drawback in previous versions of R Markdown -- Python variables are shared across different code chunks, i.e., Python code chunks share states in R Markdown. This gives R Markdown the same power as Juyper notebook.  
-
-Integrating R and Python is especially important for Linguistics, as many actively developed packages and libraries for Linguistics are written in Python. Some tasks that R certainly does better than Python are graphics and document authoring, hence, integrating R and Python combines the strengths of both languages. R Markdown acts as a "glue" here, gluing different parts of analysis together into an integrated whole.
+1. **Python support**  
+  The new R package reticulate [@allaire2018] enhances the ability of Python integration in R. It is now possible to run Python in R console, and the new Python engine enabled by reticulate also solved a major drawback in previous versions of R Markdown -- Python variables are shared across different code chunks, i.e., Python code chunks share states in R Markdown. This gives R Markdown the same power as Juyper notebook.  
+  Integrating R and Python is especially important for Linguistics, as many actively developed packages and libraries for Linguistics are written in Python. Some tasks that R certainly does better than Python are graphics and document authoring, hence, integrating R and Python combines the strengths of both languages. R Markdown acts as a "glue" here, gluing different parts of analysis together into an integrated whole.
 
 #### Wide Range of Output Formats and Styles
 

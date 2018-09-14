@@ -1,8 +1,13 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 ## Introduction
 
 Authoring is a common task for all scholars and students in academia, from report preparation, teaching, journal submission to book writing. Yet many people in academia aren't familiar with using specialized tools and an integrated workflow for academic writing, especially in the fields of Social science.
 
-Academic writing takes a great deal of time. However, much of the time spent isn't realated to the *content or the idea the author wishes to convey* but the chores regarding repetive works such as manually combining results from differnt analysis tools or formatting the papers to suit the requirements of journals.
+Academic writing takes a great deal of time. However, much of the time spent *isn't realated to the content or the idea the author wishes to convey* but the chores regarding repetive works such as manually combining results from differnt analysis tools or formatting the papers to suit the requirements of journals.
 A great deal of time can be saved if there exists a recommended and integrated workflow for academic writing, either as a norm or a culture that encourages this. Currently, however, workflows for academic writing are a matter of tastes for different authors and are considered as personal skills.
 It should be argued that a workflow be proposed in a specific field of science, especially in the fields of Social science, where students often have no formal programming training to  allow themselves to build custom programs that facilitate an integrated workflow.
 
