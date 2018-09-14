@@ -1,7 +1,8 @@
-## R Markdown as an Authoring Tool
+## Overview of R Markdown
+
+### A Brief Introduction to R Markdown
 
 "Markdown" is a minimalist and easy-to-learn markup language[^markup], which formats the text by using plain text markers, e.g., lines beginning with "#" are first level titles and "##" are second level titles, wrapping text with "\*" results in italics, etc. "R Markdown" extends the syntax of Markdown to allow more versatile styling of the text and therefore allows authoring documents with publication-ready qualities.
-
 
 ### Benefits of Using R Markdown
 
@@ -9,25 +10,44 @@ There are several benefits for using R Markdown as an authoring tool. Most of th
 
 #### R
 
-The core feature of R Markdown is its integration with R, a programming language developed not in a traditional CS[^cs]-context but for the purpose of statistical computing [@rcoreteam2018]. This makes R an special language -- althought R has a steep learning curve compared to other GUI-based statistical softwares, it has a gentle learning curve compared to other "hardcore" programming languages. In addition, R has a huge and friendly community support, which means solutions to many problems new users often confront can easily be found on the web.
+The core feature of R Markdown is its integration with R, a programming language developed not in a traditional CS[^cs]-context but for the purpose of statistical computing [@rcoreteam2018]. This makes R an special language -- althought R has a steep learning curve compared to other GUI-based statistical softwares, it has a gentle learning curve compared to other "hardcore" programming languages. R is designed for scientists, not programmers.
+In addition, R has a huge and friendly community support, which means solutions to many problems new users often confront can easily be found on the web.
 
-Many fields other than statistics either start to or already use R substantially, e.g., Biostatistics and Bioinformatics, Ecology and Evolution, Finance, Psychometrics, Geospatial analysis, and even Linguitics [@cran2018a]. This is due to R's great extendible potential, with more than 13,000 packages hosted on @cran2018.
+Many fields other than statistics either start to or already use R substantially, such as Biostatistics and Bioinformatics, Ecology and Evolution, Finance, Psychometrics, Geospatial analysis, and even Linguitics [@cran2018a]. This is due to R's great extendibility, with more than 13,000 packages hosted on @cran2018.
 
 By integration with R language, R Markdown allows computed results be directly embedded into the document.
-To put it another way, the analysis of data (through R) is directly integrated into document writing, and hence, errors incured by manual copy-and-paste are eliminated. This also enhance the "reproduciblity" of the workflow [@baumer2014], since every time the document is generated from R Markdown, the underlying code for data analysis is rerun to generate the embedded output.
+To put it another way, the analysis of data (through R) is directly integrated into document writing, and hence, errors incured by manual copy-and-paste are eliminated. This also enhance the *reproduciblity* of the workflow [@baumer2014], since every time the document is generated from R Markdown, the underlying code for data analysis is rerun to generate the embedded output. Generating the document is essentially reproducing the analysis of data.
 
 #### Supporting Reproducibility
 
-A Reproducibile analysis is an analysis with results that can be generated directly from its underlying raw data anywhere by anybody [cite needed]. Besides the above mentioned properties of R and R Markdown, two other features make R Markdown a good tool for facilitating a reproducible workflow:
+A Reproducibile analysis is an analysis with results that can be generated directly from raw data anywhere by anybody [@berez-kroeker2018]. Besides rerunning analysis to generate results every time, two other features make R Markdown a good tool for facilitating a reproducible workflow:
 
-1. **R Markdown is plain text**  
-  Plain text format, contrary to binaries such as MS Word, doesn't require specialied (and often propriety) software to open, hence facilitates the openness of science. Plain text also makes the file easiler to "version control", i.e, keeping the history of modifications, or versions, of the file by version control softwares.
+##### **1. R Markdown is plain text**
 
-1. **Python Support**  
-  The new R package reticulate [@allaire2018] enhances the ability of Python integration in R. It is now possible to run Python in R console, and the new Python engine enabled by reticulate also solved a major drawback in previous versions of R Markdown -- Python variables are now shared across different code chunks in R Markdown documents. This makes gives R Markdown the same power as the Juyper notebook.  
-  Integrating R and Python is especially important for Linguistics, as many actively developed packages and libraries related to Linguistics are written in Python. Some tasks that R certainly does better than Python are graphics and document authoring, hence, integrating R and Python combines the strengths of both languages. R Markdown acts as a "glue" here, gluing different parts of analysis together into an integrated whole.
-  
+Plain text format, contrary to binaries such as MS Word, doesn't require specialied (and often propriety) software to open, hence facilitates the openness of science. Plain text also makes the file easiler to "version control", i.e, keeping the history of modifications, or versions, of the file by version control softwares.
 
+##### **2. Python support**
+
+The new R package reticulate [@allaire2018] enhances the ability of Python integration in R. It is now possible to run Python in R console, and the new Python engine enabled by reticulate also solved a major drawback in previous versions of R Markdown -- Python variables are shared across different code chunks, i.e., Python code chunks share states in R Markdown. This gives R Markdown the same power as Juyper notebook.  
+
+Integrating R and Python is especially important for Linguistics, as many actively developed packages and libraries for Linguistics are written in Python. Some tasks that R certainly does better than Python are graphics and document authoring, hence, integrating R and Python combines the strengths of both languages. R Markdown acts as a "glue" here, gluing different parts of analysis together into an integrated whole.
+
+#### Wide Range of Output Formats and Styles
+
+R Markdown supports a variety of output formats, owing to its foundation, Pandoc [@macfarlane2013]. Some of the supported formats are MS Word, MS Powerpoint, LaTeX, PDF, and HTML. There are also multiple styles of document support, such as slides, books, journal papers[^paper], and even websites.
+This large variety of output formats enables authors to publish their works through different formats with the same underlying R Markdown file.
+
+It can be argued that the most prominent output format is HTML.
+In this Digital Age, the web becomes a popular, if not dominant, way to distribute publications. Web pages enable displaying more varieties of contents, such as GIF (animated figures) and tables with search bars, thus enhancing the ability to convey ideas. With research becoming more complex, traditional medium might not be enought to present the results. For example, it might be useless to display a complex 3D graph in a static PDF, but using GIF can facilitate the visualizing of 3D graphs, which can only be embedded in HTML files. R Markdown's native support of HTML output makes it a valuable tool for communicating -- the explanatory text is written directly with the dynamic visual elements, rather than using links to link to external files or web pages.
+
+With the ability to generate HTML outputs easily, authors also gain the ability of self-publishing the content through web, making resources available to a wider audience. This is especially useful for educational purposes in academia.
+
+
+
+### Current Resources
+
+The power of R Markdown as an authoring tool that facilitates an integrated workflow in Linguistics comes from R's extendiblity.
+By using R extensions, or R packages, R Markdown can be turned into a specialized tool for writing Linguistics related documents.
 
 
 
@@ -35,3 +55,4 @@ A Reproducibile analysis is an analysis with results that can be generated direc
 
 [^cs]: Abbreviation for Computer science.
 
+[^paper]: For a list of supportted journal templates, see https://github.com/rstudio/rticles.
