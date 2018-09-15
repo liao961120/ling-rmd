@@ -23,14 +23,3 @@ One of the problem of this workflow is that authors have to manually copy-and-pa
 An even more serious problem related to this workflow is that it might hinder the progress of science, since when errors occured but are not found, erroneous results enter a published paper, in which subsequent researches would base on.
 
 Facilitating an integrated workflow for acedemic writing is related to specific tasks a field often does. Hence, no preexisting tools exist. However, general frameworks exist and are extendable and customizable to fit in specific needs of a field. This article surveys the R Markdown ecosystem, and focuses perticularly on features related to Linguistics in order to propose a integrated workflow for authoring.
-
-
-```{r}
-if (is_html_output()) include_graphics("figs/citr.gif")
-```
-
-```{r fig.show='hold', include=FALSE, out.width=c("43.5%", "56.5%")}
-if (is_latex_output()) include_graphics(c("figs/citr2.png", "figs/citr0.png"))
-```
-
-
