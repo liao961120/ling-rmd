@@ -50,6 +50,8 @@ cond_cmpl <- function(html = NULL, latex = NULL) {
 **bold**
 
 
+\blfootnote{There is an online version of this article with the exact same text content but a better reading experience due to animated figures. Visit \textbf{\url{https://bit.ly/2D0JtIT}} to read the online version.}
+
 \pagenumbering{gobble}
 
 \newpage 
