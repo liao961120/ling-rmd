@@ -1,2 +1,15 @@
 ## A Proposed Workflow
 
+### Computational-heavy Analyses
+
+The nature of R, a programming language, lend itself to facilitating reproducibility, since writing down the analysis as *code* is essentially recording every step of the analysis. 
+
+This nature also makes analyses with R *scalable* -- for complex analyses, the structure of the R Package can be used as a basis for project management, in which documentation of data sets and analysis functions[^fc], raw data, and reports can be put together into a well-structured package, making the analyses fundamentally shareable[^pkg] through the R package system [@flight2014; @wickham2015]. This topic, however, is beyond the scope of this article, which focuses only on document writing workflows.
+
+### 
+
+
+[^fc]: For complex analyses, there are often long and repetitive code. Wraping these redundant code into functions can make the analyses more manageble.
+
+
+[^pkg]: Every one with R installed on the computer can dowload (if made available) and load the package, rerun analysis written in R Markdown, read the documentation of the data sets, and even read the source code of the analysis functions.

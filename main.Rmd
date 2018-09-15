@@ -7,21 +7,21 @@ csl: style_sheets/apa.csl
 link-citations: yes
 always_allow_html: yes
 output:
-  bookdown::pdf_document2:
-    latex_engine: xelatex
-    number_sections: FALSE
-    toc: False
-    includes:
-      in_header: style_sheets/header.tex
   bookdown::html_document2:
     includes:
     number_sections: no
     css: style_sheets/style.css
     df_print: kable
     toc: true
-    toc_depth: 2
+    toc_depth: 3
     toc_float:
         collapsed: false
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    number_sections: FALSE
+    toc: False
+    includes:
+      in_header: style_sheets/header.tex
 ---
 
 ```{r setup, include=FALSE}
@@ -43,14 +43,12 @@ cond_cmpl <- function(html = NULL, latex = NULL) {
 
 
 
-
-
 ## Abstract
 
 **bold**
 
 
-\blfootnote{There is an online version of this article with the exact same text content but a better reading experience due to animated figures. Visit \textbf{\url{https://bit.ly/2D0JtIT}} to read the online version.}
+\blfootnote{There is an online version of this article with animated figures. To have a better reading experience, visit \textbf{\url{https://bit.ly/2D0JtIT}} for the article.}
 
 \pagenumbering{gobble}
 
