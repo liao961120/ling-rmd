@@ -34,7 +34,7 @@ A Reproducibile analysis is an analysis with results that can be guaranteed to b
 
 ### Wide Range of Output Formats and Styles
 
-R Markdown supports a variety of output formats, owing to its foundation, Pandoc [@macfarlane2013]. Some of the supported formats are MS Word, MS Powerpoint, LaTeX, PDF, and HTML. There are also multiple styles of document support, such as slides, books [@xie2016bookdown], journal papers[^paper], and even websites or blogs [@xie2017].
+R Markdown supports a variety of output formats, owing to its foundation, Pandoc [@macfarlane2013]. Some of the supported formats are MS Word, MS Powerpoint, LaTeX, PDF, and HTML. There are also multiple styles of document support, such as slides, books [@xie2016bookdown], journal papers, and even websites or blogs [@xie2017].
 This large variety of output formats enables authors to publish their works through different formats with the same underlying R Markdown file.
 
 #### HTML Support
