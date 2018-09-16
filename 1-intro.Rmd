@@ -3,7 +3,7 @@ output:
   pdf_document: default
   html_document: default
 ---
-## Introduction
+# Introduction
 
 Authoring is a common task for all scholars and students in academia, from report preparation, teaching, journal submission to book writing. Yet many people in academia aren't familiar with using specialized tools and an integrated workflow for academic writing, especially in the fields of Social science.
 
@@ -11,13 +11,13 @@ Academic writing takes a great deal of time. However, much of the time spent *is
 A great deal of time can be saved if there exists a recommended and integrated workflow for academic writing, either as a norm or a culture that encourages this. Currently, however, workflows for academic writing are a matter of tastes for different authors and are considered as personal skills.
 It should be argued that a workflow be proposed in a specific field of science, especially in the fields of Social science, where students often have no formal programming training in building custom programs to facilitate an integrated workflow.
 
-### A Non-integrated Workflow
+## A Non-integrated Workflow
 
-An integrated workflow for academic writing is crucial in science. An example of a common, but not integrated, workflow is illustrated below:
+An integrated workflow for academic writing is crucial in science. An example of a common, but not integrated, workflow is illustrated in figure \@ref(fig:bad-flow):
 
 (ref:caption-badflow) A common but not integrated workflow [@munzert2014, pp xviii].
 
-```{r out.width="40%" ,fig.cap="(ref:caption-badflow)"}
+```{r bad-flow, out.width="40%" ,fig.cap="(ref:caption-badflow)"}
 include_graphics("figs/auto-data-collect-r-1.png")
 ```
 

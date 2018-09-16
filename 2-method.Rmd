@@ -1,14 +1,14 @@
-## Overview of R Markdown
+# Overview of R Markdown
 
-### A Brief Introduction
+## A Brief Introduction
 
 "Markdown" is a minimalist and easy-to-learn markup language[^markup], which formats the text by using plain text markers, e.g., lines beginning with "#" are first level titles and "##" are second level titles, wrapping text with "\*" results in italics, etc. "R Markdown" extends the syntax of Markdown to allow more versatile styling of the text and therefore allows authoring documents with publication-ready qualities.
 
-### Benefits of Using R Markdown
+## Benefits of Using R Markdown
 
 There are several benefits for using R Markdown as an authoring tool. Most of them results directly from the extensibilty of R, the language R Markdown bases on.
 
-#### R
+### R
 
 The core feature of R Markdown is its integration with R, a programming language developed not in a traditional CS[^cs]-context but for the purpose of statistical computing [@rcoreteam2018]. This makes R an special language -- althought R has a steep learning curve compared to other GUI-based statistical softwares, it has a gentle learning curve compared to other "hardcore" programming languages. R is designed for scientists, not programmers.
 In addition, R has a huge and friendly community support, which means solutions to many problems new users often confront can easily be found on the web.
@@ -18,7 +18,7 @@ Many fields other than statistics either start to or already use R substantially
 By integration with R language, R Markdown allows computed results be directly embedded into the document.
 To put it another way, the analysis of data (through R) is directly integrated into document writing, and hence, errors incured by manual copy-and-paste are eliminated. This also enhance the *reproduciblity* of the workflow [@baumer2014], since every time the document is generated from R Markdown, the underlying code for data analysis is rerun to generate the embedded output. Generating the document is essentially reproducing the analysis of data.
 
-#### Supporting Reproducibility
+### Supporting Reproducibility
 
 A Reproducibile analysis is an analysis with results that can be guaranteed to be reproduced from raw data anywhere by anybody [@berez-kroeker2018]. Besides rerunning analysis to generate results every time, two other features make R Markdown a good tool for facilitating a reproducible workflow:
 
@@ -30,7 +30,7 @@ A Reproducibile analysis is an analysis with results that can be guaranteed to b
   `r cond_cmpl("<br>", "\\newline")`
   Integrating R and Python is especially important for Linguistics, as many actively developed packages and libraries for Linguistics are written in Python. Even softwares like Praat [@boersma2002] has a third-party support in Python, which allows accessing low-level functions in Praat with Python [@jadoul2018]. Some tasks that R certainly does better than Python are data manipulation, statistical analysis, visualization, and report generation, hence, integrating R and Python combines the strengths of both languages. Here, R Markdown acts as a "glue", combining different parts of analysis together into an integrated whole.
 
-#### Wide Range of Output Formats and Styles
+### Wide Range of Output Formats and Styles
 
 R Markdown supports a variety of output formats, owing to its foundation, Pandoc [@macfarlane2013]. Some of the supported formats are MS Word, MS Powerpoint, LaTeX, PDF, and HTML. There are also multiple styles of document support, such as slides, books, journal papers[^paper], and even websites.
 This large variety of output formats enables authors to publish their works through different formats with the same underlying R Markdown file.
@@ -43,12 +43,12 @@ R Markdown's native support of HTML output makes it a valuable tool for communic
 With the ability to generate HTML outputs easily, authors also gain the ability of self-publishing the content through web, making resources available to a wider audience. This is especially useful for educational purposes in academia.
 
 
-### Making R Markdown Suitable for Linguistics
+## Making R Markdown Suitable for Linguistics
 
 The power of R Markdown as an authoring tool that facilitates an integrated workflow in Linguistics comes from R's extendiblity.
 By using R extensions, or R packages, R Markdown can be turned into a specialized tool for writing Linguistics-related documents. Below introduces two examples that reduce the burden of writing Linguistics-related documents in R Markdown.
 
-#### Bibliographies and Citations
+### Bibliographies and Citations
 
 It is necessary to insert citations when writing articles for journal submission, and many use EndNote, a reference management software, together with MS Word to accomplish this. R Markdown has native support for inserting and formating citations and bibliographies, using a citation syntax provided by Pandoc [@rstudio2018]. With R's extendibility, the experience of inserting citations can become more comfortable. For example, the R package citr [@aust2017] lets authors insert citations through a GUI interface, where authors can search information about the articles (author, year, titles etc.) they want to insert. This extension makes the experience of inserting citations and references in R Markdown similar to that of using EndNote with MS Word.
 
@@ -62,7 +62,7 @@ if (is_html_output()) include_graphics("figs/citr.gif")
 if (is_latex_output()) include_graphics(c("figs/citr2.png", "figs/citr0.png"))
 ```
 
-#### Inserting IPA Symbols
+### Inserting IPA Symbols
 
 Problem often arise when inserting IPA symbols into documents, since there is no simple way to type IPA symbols with the keyboard. The author of this article created a package to deal with this problem. linguisticsdown [@liao2018] makes it possible to type IPA symbols by searching their phonetic descriptions, such as "plosive", "bilabial", "aspirated" etc., or by using the X-SAMPA input method [@wells1995]. With this extension, authors can write documents containing IPA symbols with ease.
 
@@ -72,11 +72,11 @@ Problem often arise when inserting IPA symbols into documents, since there is no
 if (is_html_output()) include_graphics("figs/ipa.gif")
 ```
 
-```{r out.width="90%", fig.cap="(ref:lingdown)"}
+```{r out.width="80%", fig.cap="(ref:lingdown)"}
 if (is_latex_output()) include_graphics("figs/ipa.png")
 ```
 
-#### Using Templates
+### Using Templates
 
 As suggested previously, R Markdown can output formats meeting the requirements for journal submission. Authors can thus write documents with the simple R Markdown syntax without worrying the typesetting.
 Currently, officially supported journal templates[^paper] are mostly journals under big publishers such as Elseiver, Springer, and SAGE.
