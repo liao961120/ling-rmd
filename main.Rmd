@@ -48,7 +48,7 @@ cond_cmpl <- function(html = NULL, latex = NULL) {
 **bold**
 
 
-\blfootnote{There is an online version of this article with animated figures. To have a better reading experience, visit \textbf{\url{https://bit.ly/2D0JtIT}} for the article.}
+\blfootnote{There is an online version of this article with animated figures. To have a better reading experience, visit \textbf{\url{https://bit.ly/2D0JtIT}} for the article. The source of this artilce can be found at \url{https://github.com/liao961120/ling-rmd}.}
 
 \pagenumbering{gobble}
 
