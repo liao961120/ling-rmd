@@ -2,7 +2,17 @@
 
 ## A Brief Introduction
 
-"Markdown" is a minimalist and easy-to-learn markup language[^markup], which formats the text by using plain text markers, e.g., lines beginning with "#" are first level titles and "##" are second level titles, wrapping text with "\*" results in italics, etc. "R Markdown" extends the syntax of Markdown to allow more versatile styling of the text and therefore allows authoring documents with publication-ready qualities.
+"Markdown" is a minimalist and easy-to-learn markup language[^markup], which formats the text by using simple plain text markers, such as `#`, `-`, and `\*`. Part of the syntax is illustrated in figure \@ref(fig:md-demo).
+
+(ref:mddemo) A simple demonstration of Markdown synatax. The left is the text content with markdown syntax. The right is the formatted document based on Markdown syntax.
+
+```{r md-demo, fig.cap="(ref:mddemo)", out.width="100%"}
+include_graphics("figs/md-demo-merged.png")
+```
+
+
+
+"R Markdown" extends the syntax of Markdown to allow more versatile styling of the text and therefore allows authoring documents with publication-ready qualities.
 
 ## Benefits of Using R Markdown
 
