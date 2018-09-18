@@ -7,6 +7,12 @@ csl: style_sheets/apa.csl
 link-citations: yes
 always_allow_html: yes
 output:
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    number_sections: TRUE
+    toc: False
+    includes:
+      in_header: style_sheets/header.tex
   bookdown::html_document2:
     includes:
     number_sections: TRUE
@@ -16,12 +22,6 @@ output:
     toc_depth: 2
     toc_float:
         collapsed: false
-  bookdown::pdf_document2:
-    latex_engine: xelatex
-    number_sections: TRUE
-    toc: False
-    includes:
-      in_header: style_sheets/header.tex
 ---
 
 ```{r setup, include=FALSE}
@@ -41,12 +41,9 @@ cond_cmpl <- function(html = NULL, latex = NULL) {
 }
 ```
 
-
-
 # Abstract {-}
 
 **bold**
-
 
 \blfootnote{There is an online version of this article with animated figures. To have a better reading experience, visit \textbf{\url{https://bit.ly/2D0JtIT}} for the article. The source of this artilce can be found at \url{https://github.com/liao961120/ling-rmd}.}
 
@@ -55,26 +52,19 @@ cond_cmpl <- function(html = NULL, latex = NULL) {
 \newpage 
 \pagenumbering{arabic}
 
-
 ```{r child = '1-intro.Rmd'}
 ```
-
-
-\newpage 
 
 ```{r child = '2-method.Rmd'}
 ```
 
-\newpage 
-
 ```{r child = '3-result.Rmd'}
 ```
-
-\newpage 
 
 ```{r child = '4-discussion.Rmd'}
 ```
 
-\newpage
+```{r child = '5-conclusion.Rmd'}
+```
 
 # References {-}

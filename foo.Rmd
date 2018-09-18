@@ -1,0 +1,29 @@
+```{r include=FALSE}
+library(ggplot2)
+```
+
+
+### Integrating Data Analysis and Document Writing
+
+`iris`: The famous (Fisher's or Anderson's) iris data set.
+There are `r dim(iris)[1]` rows and `r dim(iris)[2]` columns in `iris`.
+
+#### Table
+
+Use code chunk to print table:
+```{r echo=FALSE}
+knitr::kable(iris[99:101, ])
+```
+
+#### Plot
+
+`Sepal.Length` on x axis and `Sepal.Width` on y axis:
+
+```{r echo=FALSE, fig.dim=c(7, 4), out.width="65%"}
+ggplot(data = iris) +
+  geom_point(aes(x = Sepal.Length,
+                 y = Sepal.Width,
+                 color = Species))
+```
+
+
