@@ -77,7 +77,7 @@ Using HTML output thus enhances communication with the readers -- the explanator
 Using HTML outputs also enables authors to self-publish the content through the web, making resources available to a wider audience. This is especially useful for educational purposes.
 
 
-## Making *R Markdown* Suitable for Linguistics
+## Making R Markdown Suitable for Linguistics
 
 The power of *R Markdown* as an authoring tool that facilitates an integrated workflow in Linguistics comes from R's extendiblity.
 By using R extensions, or R packages, *R Markdown* can be turned into a specialized tool for writing Linguistics-related documents. Below introduces several examples that reduce the burden of writing Linguistics-related documents in *R Markdown*.

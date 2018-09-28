@@ -10,7 +10,7 @@ For complete template support, such as templates provided by the package rticles
 However, there are instances where no *LaTeX* templates exists. For example, many journal doesn't provide any template and only accepts submission in *Microsoft Word* format.
 This problem can be fixed by using the *Microsoft Word* output (`.docx`) provided by *R Markdown*. A Word template can also be set up manually [@layton2015] in advance, so the output format complies the one set in that template. Formatting thus has to be done only once in the Word template.
 
-## Extension Specific to Linguistics
+## Extensions Specific to Linguistics
 
 R Markdown's capability depends on the R community. With more packages being developed, *R Markdown* becomes more powerful. The number of users in a field matters as well, with more users comes more demand of functionalities, and hence more volunteers creating new packages to meet the needs.
 
