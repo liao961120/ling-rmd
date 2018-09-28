@@ -1,9 +1,0 @@
-# Conclusion
-
-There is an ongoing replication crisis in science and is widely discussed in fields like Medicine and Psychology [@opensciencecollaboration2015].
-A substantial amount of effort is requried to perform a replicational study, but the reproducibility[^diff-reproduce] of a study can be fully achieved without additional effort if proper tools were used. 
-
-R Markdown provides an integrated workflow for writing reproducible documents without placing additional burdens on the author. It even removes existing burdens placed by MS Word or LaTeX and can speed up the writing process with R packages such as citr and linguisticsdown.
-
-
-[^diff-reproduce]: Reproducibility differs from replicability in that it does not involve the collection of new data. Reproducibility is just the process of generating the same result from the original raw data.
