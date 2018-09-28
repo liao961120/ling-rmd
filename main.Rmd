@@ -7,6 +7,12 @@ csl: style_sheets/apa.csl
 link-citations: yes
 always_allow_html: yes
 output:
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    number_sections: TRUE
+    toc: False
+    includes:
+      in_header: style_sheets/header.tex
   bookdown::html_document2:
     includes:
     number_sections: TRUE
@@ -16,12 +22,6 @@ output:
     toc_depth: 2
     toc_float:
         collapsed: false
-  bookdown::pdf_document2:
-    latex_engine: xelatex
-    number_sections: TRUE
-    toc: False
-    includes:
-      in_header: style_sheets/header.tex
 ---
 
 ```{r setup, include=FALSE}
@@ -43,12 +43,14 @@ cond_cmpl <- function(html = NULL, latex = NULL) {
 
 # Abstract {-}
 
-**bold**
+*R Markdown*, an alternative document preparation system to Microsoft Word and LaTeX, is introduced for academic and scientific writing in Linguistics. Several strengths of *R Markdown*, including integration of document writing and data analysis, extensibility, customizability, and graphical user interface support, and their potentials for enhancing an integrated, reproducibility-facilitating, and user-friendly document writing workflow for scientific authoring in Linguistics are discussed. Some limitations of *R Markdown* are also pointed out to provide future directions for making *R Markdown* a better authoring tool in Linguistics.
 
-\blfootnote{There is an online version of this article with animated figures. To have a better reading experience, visit \textbf{\href{http://bit.ly/LingRmd}{bit.ly/LingRmd}}. The source of this artilce can be found at \url{https://github.com/liao961120/ling-rmd}.}
+
+
+\blfootnote{An online version of this article with animated figures can be found at \textbf{\href{http://bit.ly/LingRmd}{bit.ly/LingRmd}}. \\
+The source of this article can be found at \url{https://github.com/liao961120/ling-rmd}.}
 
 \pagenumbering{gobble}
-
 \newpage 
 \pagenumbering{arabic}
 
