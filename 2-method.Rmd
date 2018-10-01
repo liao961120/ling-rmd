@@ -79,7 +79,7 @@ HTML outputs also enables authors to self-publish the content through the web pa
 ## Making R Markdown Suitable for Linguistics
 
 The power of *R Markdown* as an authoring tool that facilitates an integrated workflow in linguistics comes from R's extendibility.
-By using R extensions, or R packages, *R Markdown* can be turned into a specialized tool for writing linguistics-related documents. Below introduces several examples that reduce the burden of writing linguistics-related documents in *R Markdown*.
+By using R extensions, or R packages, *R Markdown* can be turned into a specialized tool for writing documents, for example, there are even spelling and grammar checking extensions [@dumas2018]. Below introduces several examples that reduce the burden of writing linguistics-related documents in *R Markdown*.
 
 ### Bibliographies and Citations
 
