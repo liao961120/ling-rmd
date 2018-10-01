@@ -5,6 +5,7 @@ date: "`r format(Sys.Date(), '%B %d, %Y')`"
 bibliography: author-ling.bib
 csl: style_sheets/apa.csl
 link-citations: yes
+urlcolor: "blue"
 always_allow_html: yes
 output:
   bookdown::pdf_document2:
@@ -47,7 +48,7 @@ cond_cmpl <- function(html = NULL, latex = NULL) {
 
 
 
-\blfootnote{An online version of this article with animated figures can be found at \textbf{\href{http://bit.ly/LingRmd}{bit.ly/LingRmd}}. \\
+\blfootnote{An online version of this article with animated figures can be found at \href{http://bit.ly/LingRmd}{bit.ly/LingRmd}. \\
 The source of this article can be found at \url{https://github.com/liao961120/ling-rmd}.}
 
 \pagenumbering{gobble}

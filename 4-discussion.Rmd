@@ -1,7 +1,7 @@
 # Discussion
 
-R Markdown fully harnesses the capabilities of R language, not only R's abilitity in dealing with data but also its ability to typesetting documents. Putting these two features together makes *R Markdown* a powerful tool for academic and scientific authoring. 
-R Markdown's ability, however, depends much on its support. This article points out many strengths of *R Markdown* but also some current limitations. These limitations provide future directions to improve *R Markdown*, which can make it more suitable for document writing in Linguistics.
+R Markdown fully harnesses the capabilities of R language, not only R's ability in dealing with data but also its ability to typesetting documents. Putting these two features together makes *R Markdown* a powerful tool for academic and scientific authoring. 
+R Markdown's ability, however, depends much on its support. This article points out many strengths of *R Markdown* but also some current limitations. These limitations provide future directions to improve *R Markdown*, which can make it more suitable for document writing in linguistics.
 
 ## Template Support
 
@@ -14,5 +14,5 @@ This problem can be fixed by using the *Microsoft Word* output (`.docx`) provide
 
 R Markdown's capability depends on the R community. With more packages being developed, *R Markdown* becomes more powerful. The number of users in a field matters as well, with more users comes more demand of functionalities, and hence more volunteers creating new packages to meet the needs.
 
-There are few supports of R and *R Markdown* related to Linguistics, except for fields like Text Mining and Natural Language Processing. To make *R Markdown* a better authoring tool for Linguitics, a larger userbase is needed. Linguists familiar with R can also help to build the community by bundling regularly used custom functions into a package and making it availble to other users.
+There are few supports of R and *R Markdown* related to linguistics, except for fields like Text Mining and Natural Language Processing. To make *R Markdown* a better authoring tool for linguistics, a larger userbase is needed. Linguists familiar with R can also help to build the community by bundling regularly used custom functions into a package and making it available to other users.
 

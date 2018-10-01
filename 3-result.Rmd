@@ -30,6 +30,6 @@ include_graphics("figs/rmd-flow.png")
 
 
 
-[^fc]: For complex analyses, there are often long and repetitive code. Wraping these redundant code into functions can make the analyses more manageble.
+[^fc]: For complex analyses, there are often long and repetitive code. Wrapping these redundant code into functions can make the analyses more manageable.
 
-[^pkg]: Every one with R installed on the computer can dowload (if made available) and load the package, rerun analysis written in *R Markdown*, read the documentation of the data sets, and even read the source code of the analysis functions.
+[^pkg]: Every one with R installed on the computer can download (if made available) and load the package, rerun analysis written in *R Markdown*, read the documentation of the data sets, and even read the source code of the analysis functions.
