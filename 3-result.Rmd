@@ -1,3 +1,5 @@
+\newpage
+
 # An Example Workflow
 
 ```{r}
@@ -11,14 +13,13 @@ Based on figure \@ref(fig:rmd-flow), authors can do the following to facilitate 
 1. Put R or Python code that clean, manipulate, and analyze data in the *R Markdown* source file. If the code is too long, separate the code into R or Python scripts and include them into *R Markdown* by "source functions".
 For even more complex analyses, use the structure of *R Package* as a basis for project management, in which documentation of data sets and functions[^fc], raw data, and reports can be put together into a well-structured package [@flight2014; @wickham2015].
 
-1. Put R code that generates figures or tables in the *R Markdown* source file, making it easy to inspect how they were generated.
+1. Put R code that generates figures or tables in the *R Markdown* source file, making it easier to inspect how they were generated.
 
 1. For values that are computed from data and need to be included as inline text in the document, save them as R variables and put them inline with special syntax. For example, use *p*-value = \``r txt`\`. The variable `p_val` will be converted to the value when the output document is generated. Hence, when data changes (e.g. addition of new data) or the analysis code are modified, the value of the variable `p_val` gets automatically updated as well.
 
 1. Use *citr* to search and insert citations.
 
 1. Use *linguisticsdown* to type IPA symbols.
-
 
 
 (ref:rmdflow) Combining R's data analysis and typesetting abilities to generate a reproducible report. `r cond_cmpl("<br>", "\\newline")` The leftmost is a representation of an *R Markdown* source file; the rightmost is a generated document. The middle is the process underlying the conversion from source file to output document. For documents with complete template support, the typesetting is automated, so authors only need to focus on analysis and contents of the article.
