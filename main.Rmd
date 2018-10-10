@@ -46,8 +46,9 @@ cond_cmpl <- function(html = NULL, latex = NULL) {
 *R Markdown*, an alternative document preparation system to Microsoft Word and LaTeX, is introduced for academic and scientific writing in linguistics. Several strengths of *R Markdown*, such as integration of document writing and data analysis, extensibility, customizability, and graphical user interface support, and the potential for enhancing an integrated, reproducibility-facilitating, and user-friendly document writing workflow for scientific authoring in linguistics are discussed. Some limitations of *R Markdown* are also pointed out to provide future directions for shaping *R Markdown* into a better authoring tool.
 
 
-\blfootnote{An online version of this article with animated figures can be found at \href{http://bit.ly/LingRmd}{bit.ly/LingRmd}. \\
-The source of this article can be found at \url{https://github.com/liao961120/ling-rmd}.}
+\blfootnote{An online version of this article with animated figures can be found at \href{http://bit.ly/LingRmd}{bit.ly/LingRmd}.}
+
+\blfootnote{The source of this article can be found at \url{https://github.com/liao961120/ling-rmd}.}
 
 \pagenumbering{gobble}
 \newpage 
