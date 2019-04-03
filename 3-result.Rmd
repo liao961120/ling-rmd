@@ -10,7 +10,7 @@ tk <- '`'
 Figure \@ref(fig:rmd-flow) illustrates the flow of *text* and *data processing* in *R Markdown*.
 Based on figure \@ref(fig:rmd-flow), authors can do the following to facilitate an integrated workflow for document writing:
 
-1. Put R or Python code that clean, manipulate, and analyze data in the *R Markdown* source file. If the code is too long, separate the code into R or Python scripts and include them into *R Markdown* by "source functions".
+1. Put R or Python code that clean, manipulate, and analyze data in the *R Markdown* source file. If the code is lengthy, separate the code into R or Python scripts and include them into *R Markdown* by "source functions".
 For even more complex analyses, use the structure of *R Package* as a basis for project management, in which documentation of data sets and functions[^fc], raw data, and reports can be put together into a well-structured package [@flight2014; @wickham2015].
 
 1. Put R code that generates figures or tables in the *R Markdown* source file, making it easier to inspect how they were generated.
