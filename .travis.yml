@@ -16,8 +16,11 @@ r_packages:
   - tinytex
   - ggplot2
 
-#before_install:
-#  - sudo timedatectl set-timezone Asia/Taipei  # Set timezone to Taiwan
+before_install:
+  - sudo apt-get update
+  - sudo timedatectl set-timezone Asia/Taipei  # Set timezone to Taiwan
+  - sudo apt-get install fonts-arphic-bkai00mp # install AR PL KaitiM Big5
+
 
 
 script:
