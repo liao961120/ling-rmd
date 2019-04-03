@@ -20,11 +20,17 @@ before_install:
   - sudo apt-get update
   - sudo timedatectl set-timezone Asia/Taipei  # Set timezone to Taiwan
   - sudo apt-get install fonts-arphic-bkai00mp # install AR PL KaitiM Big5
+  - tar xf hanwangheiheavy.tar.xz  # install fonts
+  - sudo mkdir /usr/share/fonts/truetype/customfonts
+  - sudo cp ./hanwangheiheavy/*.ttf /usr/share/fonts/truetype/customfonts/
+  - sudo fc-cache -fv
 
 
 
 script:
   - R -e 'tinytex::install_tinytex()'
+
+after_success:
   - Rscript -e 'rmarkdown::render("main.Rmd", output_format = "bookdown::html_document2")'
   - Rscript -e 'rmarkdown::render("main.Rmd", output_format = "bookdown::pdf_document2")'
   - mkdir docs
