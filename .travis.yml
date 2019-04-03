@@ -1,23 +1,32 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
 language: R
-sudo: required
+sudo: false
 dist: trusty
 cache: packages
 pandoc_version: 1.19.2.1
+latex: false
 
+branches:
+  only:
+    - master
 
-before_install:
-  - sudo apt-get update
-  - sudo apt-get install python3
-  - sudo apt-get install python3-pip
-  - sudo timedatectl set-timezone Asia/Taipei  # Set timezone to Taiwan
+r_packages:
+  - bookdown
+  - tinytex
+  - ggplot2
+
+#before_install:
+#  - sudo timedatectl set-timezone Asia/Taipei  # Set timezone to Taiwan
 
 
 script:
+  - R -e 'tinytex::install_tinytex()'
   - Rscript -e 'rmarkdown::render("main.Rmd", output_format = "bookdown::html_document2")'
+  - Rscript -e 'rmarkdown::render("main.Rmd", output_format = "bookdown::pdf_document2")'
   - mkdir docs
   - cp main.html docs/index.html
+  - cp -r main.pdf docs/index.pdf
 
 
 # deploy docs/ and master branch to branch 'gh-pages'
