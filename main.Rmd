@@ -1,5 +1,5 @@
 ---
-title: "R Markdown as an Authoring Tool in Linguistics"
+title: R Markdown as an Authoring Tool in Linguistics `r ifelse(knitr::is_html_output(), "<br><span style='font-size:0.3em;float:right'><a href='./index.pdf'>PDF Version</a></span>", "")`
 author: '`r ifelse(knitr::is_html_output(), "Yongfu Liao", "Yongfu Liao (廖永賦)\\thanks{Department of Psychology, National Taiwan University, Taipei, Taiwan}")`'
 bibliography: author-ling.bib
 csl: style_sheets/apa.csl
